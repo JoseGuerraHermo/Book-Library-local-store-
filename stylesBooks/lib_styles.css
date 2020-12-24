@@ -1,0 +1,272 @@
+body {
+  background-color: #4d39a8;
+}
+.alertSpan{
+  margin-left: 1em;
+  border-radius: 3px;
+  color: #4d39a8;
+  padding-right: 1em;
+  background-color: white;
+}
+.libraryAll__nav .navList {
+  background-color: #856dee;
+  -webkit-box-shadow: 0px 15px 30px -13px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 15px 30px -13px rgba(0, 0, 0, 0.7);
+  color: #e3dbf5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
+  height: 5vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 900;
+}
+
+.libraryAll__nav .navList li {
+  padding: 0.4em 1em;
+}
+
+.libraryAll__booksContainer--cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4d39a8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5vh 0;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.libraryAll__booksContainer--cards .cardBase {
+  background-color: #856dee;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 20px 30px -8px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 20px 30px -8px rgba(0, 0, 0, 0.7);
+  height: 26em;
+  margin: 4em 2em;
+  position: relative;
+  width: 18em;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside {
+  padding-top: 0.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 17em;
+      grid-template-columns: 17em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input, .libraryAll__booksContainer--cards .cardBase .CBinside label, .libraryAll__booksContainer--cards .cardBase .CBinside button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8em;
+  padding: 1em;
+  outline: none;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input ::-webkit-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside label ::-webkit-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside button ::-webkit-input-placeholder {
+  color: black;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input :-ms-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside label :-ms-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside button :-ms-input-placeholder {
+  color: black;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input ::-ms-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside label ::-ms-input-placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside button ::-ms-input-placeholder {
+  color: black;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input ::placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside label ::placeholder, .libraryAll__booksContainer--cards .cardBase .CBinside button ::placeholder {
+  color: black;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px black solid;
+  border-radius: 0.3em;
+  font-size: 0.9em;
+  padding: 0.6em;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside input::-webkit-outer-spin-button,
+.libraryAll__booksContainer--cards .cardBase .CBinside input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside .BookPagesBase[type=number] {
+  -moz-appearance: textfield;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside button {
+  margin-top: 2.5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5em;
+}
+
+.libraryAll__booksContainer--cards .cardBase .CBinside button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.libraryAll__booksContainer--cards .cardBook {
+  background-color: #856dee;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 20px 30px -8px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 20px 30px -8px rgba(0, 0, 0, 0.7);
+  height: 26em;
+  margin: 4em 2em;
+  position: relative;
+  width: 18em;
+  background-color: #856dee;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 17em;
+      grid-template-columns: 17em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.5em;
+}
+
+.libraryAll__booksContainer--cards .cardBook .elementToHide {
+  position: absolute;
+}
+
+.libraryAll__booksContainer--cards .cardBook .imageFrame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4d39a8;
+  border-radius: 1em;
+  height: 16em;
+  width: 13em;
+  position: relative;
+  margin-left: 10%;
+  -webkit-box-shadow: 0px 15px 29px -22px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 15px 29px -22px rgba(0, 0, 0, 0.75);
+}
+
+.libraryAll__booksContainer--cards .cardBook .imageFrame h1 {
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-size: 2em;
+  position: absolute;
+  z-index: 1;
+}
+
+.libraryAll__booksContainer--cards .cardBook .imageFrame .covImg {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 15em;
+  width: 12em;
+  z-index: 2;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK p, .libraryAll__booksContainer--cards .cardBook .infoBooK h2, .libraryAll__booksContainer--cards .cardBook .infoBooK button {
+  color: rgba(255, 255, 255, 0.76);
+  font-family: 'Cinzel', serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.6em;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK h2 {
+  font-size: 1em;
+  font-weight: bold;
+  border-bottom: 1px white solid;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK p {
+  font-size: 0.8em;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK button {
+  background-color: transparent;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.4em;
+  padding: 0.4em;
+  font-size: 0.9em;
+  margin-top: 0.5em;
+  width: 19em;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK label {
+  color: rgba(255, 255, 255, 0.76);
+  font-family: 'Cinzel', serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8em;
+}
+
+.libraryAll__booksContainer--cards .cardBook .infoBooK button:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.libraryAll__footer {
+  background-color: #856dee;
+  color: #e3dbf5;
+  height: 5vh;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  position: fixed;
+  top: 95vh;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.libraryAll__footer p {
+  padding-top: 0.3em;
+}
+
+.libraryAll__footer a {
+  color: #e3dbf5;
+  text-decoration: none;
+}
+/*# sourceMappingURL=lib_styles.css.map */
